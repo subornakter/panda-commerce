@@ -2,6 +2,7 @@
     box-sizing: border-box;
     
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 .container{
     max-width: 1280px;
@@ -20,6 +21,30 @@ nav{
     justify-content: space-between;
     padding: 10px 0;
 
+}
+.product-li {
+  position: relative;
+}
+.dropdown-nav-items {
+  position: absolute;
+  top: 30%;
+  left: -50px;
+  padding: 5px 0;
+  list-style: none;
+  background-color: white;
+  text-align: center;
+  width: 150px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 2px 0px 8px 0px rgb(0 0 0 / 15%);
+  visibility: hidden;
+}
+.dropdown-nav-items li {
+  margin: 5px 0;
+}
+.product-li:hover .dropdown-nav-items {
+  visibility: visible;
+  top: 100%;
+  transition: 0.5s;
 }
 .search-parent{
     position: relative;
